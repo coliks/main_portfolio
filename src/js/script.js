@@ -172,8 +172,8 @@ function setActiveLink(id) {
     const href = link.getAttribute("href");
 
     if (href === `#${id}`) {
-      link.classList.add("text-[#ef4160]", "font-semibold");
       link.classList.remove("text-gray-500");
+      link.classList.add("text-[#ef4160]", "font-semibold");
     } else {
       link.classList.remove("text-[#ef4160]", "font-semibold");
       link.classList.add("text-gray-500");
