@@ -157,58 +157,66 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ==========================================
-  // NAV ACTIVE LINK + NAVBAR SCROLL STATE
-  // (single scroll listener handles both)
+  // ACTIVE NAVIGATION + NAVBAR SCROLL STATE
   // ==========================================
 
- // ==========================================
-// ACTIVE NAVIGATION
-// ==========================================
+  const navLinks = document.querySelectorAll(".navlink");
 
-const navLinks = document.querySelectorAll(".navlink");
+  function setActiveLink(id) {
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
 
-function setActiveLink(id) {
-  navLinks.forEach((link) => {
-    const href = link.getAttribute("href");
+      if (href === `#${id}`) {
+        link.classList.remove("text-gray-500");
+        link.classList.add("text-[#5D3BF1]", "font-semibold");
+      } else {
+        link.classList.remove("text-[#5D3BF1]", "font-semibold");
+        link.classList.add("text-gray-500");
+      }
+    });
+  }
 
-    if (href === `#${id}`) {
-      link.classList.remove("text-gray-500");
-      link.classList.add("text-[#5D3BF1]", "font-semibold");
+  function updateActiveSection() {
+    const sections = document.querySelectorAll("section[id]");
+
+    let currentSection = "home";
+
+    // Position slightly below the navbar
+    const position = window.scrollY + 150;
+
+    sections.forEach((section) => {
+      const top = section.getBoundingClientRect().top + window.scrollY;
+      const bottom = top + section.offsetHeight;
+
+      if (position >= top && position < bottom) {
+        currentSection = section.id;
+      }
+    });
+
+    setActiveLink(currentSection);
+  }
+
+  function updateNavbarBackground() {
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-white", "shadow-sm", "border-b");
     } else {
-      link.classList.remove("text-[#5D3BF1]", "font-semibold");
-      link.classList.add("text-gray-500");
+      navbar.classList.remove("bg-white", "shadow-sm", "border-b");
     }
-  });
-}
+  }
 
-function updateActiveSection() {
-  const sections = document.querySelectorAll("section[id]");
+  function handleScroll() {
+    updateNavbarBackground();
+    updateActiveSection();
+  }
 
-  let currentSection = "home";
+  // Update while scrolling
+  window.addEventListener("scroll", handleScroll);
 
-  // Position slightly below the navbar
-  const position = window.scrollY + 150;
+  // Update when resizing
+  window.addEventListener("resize", updateActiveSection);
 
-  sections.forEach((section) => {
-    const top = section.getBoundingClientRect().top + window.scrollY;
-    const bottom = top + section.offsetHeight;
-
-    if (position >= top && position < bottom) {
-      currentSection = section.id;
-    }
-  });
-
-  setActiveLink(currentSection);
-}
-
-// Update while scrolling
-window.addEventListener("scroll", updateActiveSection);
-
-// Update when resizing
-window.addEventListener("resize", updateActiveSection);
-
-// Initial state
-updateActiveSection();
+  // Initial state
+  handleScroll();
 
   // ==========================================
   // CONTACT FORM (Formspree via fetch)
