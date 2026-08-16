@@ -176,23 +176,41 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const visibleSection = entries
-            .filter((entry) => entry.isIntersecting)
-            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      const navLinks = document.querySelectorAll(".navlink");
+const sections = document.querySelectorAll("section[id]");
 
-          if (visibleSection) {
-            setActiveLink(visibleSection.target.id);
-          }
-        },
-        {
-          rootMargin: "-20% 0px -60% 0px",
-          threshold: [0, 0.25, 0.5, 0.75, 1],
-        },
-      );
+function setActiveLink(id) {
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${id}`;
 
-      sections.forEach((section) => observer.observe(section));
+    link.classList.toggle("active-navlink", isActive);
+  });
+}
+
+function updateActiveSection() {
+  const scrollPosition = window.scrollY + window.innerHeight * 0.3;
+
+  let currentSection = "home";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
+
+    if (
+      scrollPosition >= sectionTop &&
+      scrollPosition < sectionBottom
+    ) {
+      currentSection = section.id;
+    }
+  });
+
+  setActiveLink(currentSection);
+}
+
+window.addEventListener("scroll", updateActiveSection);
+window.addEventListener("resize", updateActiveSection);
+
+updateActiveSection();
 
       // Set Home as active immediately when the page loads
       if (window.scrollY < 100) {
