@@ -161,54 +161,54 @@ document.addEventListener("DOMContentLoaded", () => {
   // (single scroll listener handles both)
   // ==========================================
 
-  const navLinks = document.querySelectorAll(".navlink");
+ // ==========================================
+// ACTIVE NAVIGATION
+// ==========================================
+
+const navLinks = document.querySelectorAll(".navlink");
+
+function setActiveLink(id) {
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+
+    if (href === `#${id}`) {
+      link.classList.add("text-[#ef4160]", "font-semibold");
+      link.classList.remove("text-gray-500");
+    } else {
+      link.classList.remove("text-[#ef4160]", "font-semibold");
+      link.classList.add("text-gray-500");
+    }
+  });
+}
+
+function updateActiveSection() {
   const sections = document.querySelectorAll("section[id]");
 
-  function setActiveLink(id) {
-    navLinks.forEach((link) => {
-      const isActive = link.getAttribute("href") === `#${id}`;
-      link.classList.toggle("active-navlink", isActive);
-    });
-  }
+  let currentSection = "home";
 
-  function updateActiveSection() {
-    // Keep Home active when at the very top
-    if (window.scrollY < 100) {
-      setActiveLink("home");
-      return;
+  // Position slightly below the navbar
+  const position = window.scrollY + 150;
+
+  sections.forEach((section) => {
+    const top = section.getBoundingClientRect().top + window.scrollY;
+    const bottom = top + section.offsetHeight;
+
+    if (position >= top && position < bottom) {
+      currentSection = section.id;
     }
+  });
 
-    const scrollPosition = window.scrollY + window.innerHeight * 0.3;
-    let currentSection = "home";
+  setActiveLink(currentSection);
+}
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionBottom = sectionTop + section.offsetHeight;
+// Update while scrolling
+window.addEventListener("scroll", updateActiveSection);
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-        currentSection = section.id;
-      }
-    });
+// Update when resizing
+window.addEventListener("resize", updateActiveSection);
 
-    setActiveLink(currentSection);
-  }
-
-  function handleScroll() {
-    // Navbar background/shadow toggle
-    if (window.scrollY > 50) {
-      navbar.classList.add("bg-white", "shadow-sm", "border-b");
-    } else {
-      navbar.classList.remove("bg-white", "shadow-sm", "border-b");
-    }
-
-    updateActiveSection();
-  }
-
-  window.addEventListener("scroll", handleScroll);
-  window.addEventListener("resize", updateActiveSection);
-
-  // Set initial state on load
-  handleScroll();
+// Initial state
+updateActiveSection();
 
   // ==========================================
   // CONTACT FORM (Formspree via fetch)
