@@ -139,9 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
-          navbar.classList.add("bg-white border-b", "shadow-sm");
+          navbar.classList.add("bg-white", "shadow-sm", "border-b");
         } else {
-          navbar.classList.remove("bg-white", "shadow-sm");
+          navbar.classList.remove("bg-white", "shadow-sm", "border-b");
         }
       });
 
