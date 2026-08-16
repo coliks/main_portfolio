@@ -1,0 +1,2070 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferdinand</title>
+
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-mulish bg-[#F0F1F5] text-[#333333] overflow-x-hidden">
+    <nav
+      id="navbar"
+      class="flex items-center justify-between fixed left-0 top-0 h-16 sm:h-20 w-full px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 z-50 transition-all duration-300"
+    >
+      <div>
+        <a
+          href="#home"
+          class="text-lg sm:text-xl font-bold font-dm-mono text-[#0F1221]"
+        >
+          Ferdinand.
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-6 lg:gap-10">
+        <a href="#home" class="navlink">Home</a>
+        <a href="#about" class="navlink">About</a>
+        <a href="#services" class="navlink">Services</a>
+        <a href="#projects" class="navlink">Projects</a>
+        <a href="#contact" class="navlink">Contact</a>
+      </div>
+
+      <div class="hidden sm:block">
+        <a href="mailto:colicoferdinandj@gmail.com"
+          ><button
+            class="bg-[#5D3BF1] text-white px-3 py-2.5 md:px-4 md:py-3 flex items-center justify-center gap-2 md:gap-4 rounded-md"
+          >
+            <span class="text-sm font-medium">Get in Touch</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg></button
+        ></a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        id="menuBtn"
+        class="md:hidden flex items-center justify-center p-2 rounded-md text-[#0F1221]"
+        aria-label="Open menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile menu panel -->
+    <div
+      id="mobileMenu"
+      class="fixed inset-x-0 top-16 z-40 hidden flex-col bg-white shadow-lg md:hidden px-6 py-6 gap-4"
+    >
+      <a href="#home" class="navlink-mobile py-2 border-b border-gray-100"
+        >Home</a
+      >
+      <a href="#about" class="navlink-mobile py-2 border-b border-gray-100"
+        >About</a
+      >
+      <a href="#services" class="navlink-mobile py-2 border-b border-gray-100"
+        >Services</a
+      >
+      <a href="#projects" class="navlink-mobile py-2 border-b border-gray-100"
+        >Projects</a
+      >
+      <a href="#contact" class="navlink-mobile py-2">Contact</a>
+      <a href="mailto:colicoferdinandj@gmail.com">
+        <button
+          class="bg-[#5D3BF1] text-white px-4 py-3 flex items-center justify-center gap-4 rounded-md mt-2"
+        >
+          <span class="text-sm font-medium">Get in Touch</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="size-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </button>
+      </a>
+    </div>
+
+    <div
+      id="home"
+      class="relative min-h-screen bg-white overflow-hidden flex items-center px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 pt-24 pb-16 lg:py-0"
+    >
+      <!-- Grid -->
+      <div
+        class="absolute inset-0 [background-image:linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] [background-size:30px_36px] sm:[background-size:50px_60px]"
+      ></div>
+      <!-- Fade -->
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,white_80%)]"
+      ></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-5 w-full"
+      >
+        <div class="flex flex-col items-start">
+          <span class="text-base sm:text-lg mb-3 sm:mb-5">Hello, I am</span>
+          <p
+            class="font-dm-mono font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-3 sm:mb-5 leading-tight"
+          >
+            Ferdinand <span class="text-[#5D3BF1]">Colico</span>
+          </p>
+          <p class="mb-5 text-base sm:text-lg">
+            I craft beautiful digital experiences that blend design and
+            technology — turning ideas into polished, user-centered products.
+          </p>
+          <div
+            class="flex flex-col xs:flex-row sm:flex-row items-stretch sm:items-center gap-3 sm:gap-5 w-full sm:w-auto"
+          >
+            <a
+              href="cv/colico_ferdinand-cv.pdf"
+              download="Ferdinand-Colico-CV.pdf"
+            >
+              <button
+                class="bg-[#5D3BF1] flex items-center justify-center text-white px-4 py-3 rounded-md font-medium gap-4"
+              >
+                <span>Download CV</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
+              </button>
+            </a>
+            <a href="#about">
+              <button
+                class="flex items-center justify-center px-4 py-3 rounded-md font-medium gap-4 hover:text-[#5D3BF1]"
+              >
+                <span>Learn More</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </a>
+          </div>
+
+          <div
+            class="mt-10 sm:mt-14 lg:mt-20 flex flex-wrap items-center gap-3 sm:gap-5"
+          >
+            <div class="flex items-center gap-3">
+              <a
+                href="https://www.linkedin.com/in/ferdinand-colico-795b1a381/"
+                target="_blank"
+                class="bg-gray-200 p-2 rounded-md text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="sm:w-8 sm:h-8"
+                >
+                  <path
+                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/colikss"
+                target="_blank"
+                class="bg-gray-200 p-2 rounded-md text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="sm:w-8 sm:h-8"
+                >
+                  <path
+                    d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/colikshh/"
+                target="_blank"
+                class="bg-gray-200 p-2 rounded-md text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="sm:w-8 sm:h-8"
+                >
+                  <path
+                    d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="h-px bg-gray-400 w-10"></div>
+            <span class="text-gray-400 text-sm sm:text-base">Follow Me</span>
+          </div>
+        </div>
+
+        <div class="relative flex items-center justify-center mt-6 lg:mt-0">
+          <!-- Purple glow -->
+          <div
+            class="absolute w-9/12 h-72 sm:h-96 rounded-full bg-[#5D3BF1]/20 blur-3xl"
+          ></div>
+
+          <!-- Main laptop/card -->
+          <div
+            class="relative z-10 w-full max-w-[520px] h-[220px] xs:h-[260px] sm:h-[300px] md:h-[350px] rounded-2xl border border-gray-200 bg-gray-950 shadow-2xl overflow-hidden rotate-0 sm:rotate-[-3deg]"
+          >
+            <!-- Fake browser header -->
+            <div
+              class="h-8 sm:h-10 bg-gray-900 border-b border-gray-800 flex items-center px-4 gap-2"
+            >
+              <span
+                class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-400"
+              ></span>
+              <span
+                class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-400"
+              ></span>
+              <span
+                class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-400"
+              ></span>
+            </div>
+
+            <!-- Code -->
+            <div
+              class="p-4 sm:p-6 font-dm-mono text-xs sm:text-sm space-y-1.5 sm:space-y-2 overflow-hidden"
+            >
+              <p>
+                <span class="text-purple-400">const</span>
+                <span class="text-blue-400"> developer</span> =
+                <span class="text-green-400">"Ferdinand"</span>;
+              </p>
+
+              <p>
+                <span class="text-purple-400">const</span>
+                <span class="text-blue-400"> skills</span> = [
+              </p>
+
+              <p class="pl-4 sm:pl-6 text-green-400 truncate">
+                "Frontend: HTML, TailwindCSS, JavaScript",
+              </p>
+              <p class="pl-4 sm:pl-6 text-green-400">
+                "Backend: Python(Flask)",
+              </p>
+              <p class="pl-4 sm:pl-6 text-green-400">"Database: MySQL",</p>
+
+              <p>];</p>
+
+              <br class="hidden sm:block" />
+              <p>
+                <span class="text-purple-400">function</span>
+                <span class="text-yellow-400"> buildSomethingGreat</span>() {
+              </p>
+
+              <p class="pl-4 sm:pl-6 text-gray-400">
+                return "Let's build something!";
+              </p>
+
+              <p>}</p>
+            </div>
+          </div>
+
+          <!-- Clean Code badge -->
+          <div
+            class="absolute z-20 -top-3 -left-2 sm:-top-5 sm:-left-5 bg-white border border-gray-200 shadow-lg rounded-xl px-3 py-2 sm:px-5 sm:py-4"
+          >
+            <div class="flex items-center gap-2 sm:gap-3">
+              <div
+                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#5D3BF1]/10 flex items-center justify-center text-[#5D3BF1] shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
+                  class="size-4 sm:size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 9-3 3 3 3m7.5-6 3 3-3 3M14.25 5.25l-4.5 13.5"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <p class="font-semibold text-xs sm:text-sm">Clean Code</p>
+                <p class="text-[10px] sm:text-xs text-gray-500">
+                  Scalable solutions
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Performance badge -->
+          <div
+            class="absolute z-20 -bottom-3 -right-2 sm:-bottom-5 sm:-right-5 bg-white border border-gray-200 shadow-lg rounded-xl px-3 py-2 sm:px-5 sm:py-4"
+          >
+            <div class="flex items-center gap-2 sm:gap-3">
+              <div
+                class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#5D3BF1]/10 flex items-center justify-center text-[#5D3BF1] shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
+                  class="size-4 sm:size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 10V3L4 14h7v7l9-11h-7Z"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <p class="font-semibold text-xs sm:text-sm">Performance</p>
+                <p class="text-[10px] sm:text-xs text-gray-500">
+                  Fast & optimized
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-20 md:py-28 lg:py-40"
+      id="about"
+    >
+      <span class="text-sm font-bold text-[#5D3BF1]">ABOUT ME</span>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mt-10">
+        <div class="flex flex-col items-start">
+          <p class="text-2xl sm:text-3xl md:text-4xl font-dm-mono font-bold">
+            More than a <span class="text-[#5D3BF1]">developer.</span>
+          </p>
+          <p class="text-base mt-4">
+            I'm Ferdinand Colico, based in Laguna, Philippines. I don't just
+            write code — I shoot photos, cut videos, and design brands. Every
+            project I take on benefits from that full creative range. I
+            understand how things should look, move, and feel before a single
+            line of code is written.
+          </p>
+
+          <div class="grid grid-cols-2 mt-5 w-full max-w-sm">
+            <div class="flex flex-col border-l-2 p-3">
+              <span class="text-2xl font-bold text-[#5D3BF1]">20+</span>
+              <span class="text-sm">Projects Completed</span>
+            </div>
+            <div class="flex flex-col border-l-2 p-3">
+              <span class="text-2xl font-bold text-[#5D3BF1]">3+</span>
+              <span class="text-sm">Years of Experience</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full mt-5 mb-5">
+            <div class="flex items-center border rounded-xl p-3 bg-white gap-5">
+              <div
+                class="bg-purple-400/20 p-2 rounded-md text-purple-400 shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
+              </div>
+              <span class="text-sm font-medium">Fullstack Development</span>
+            </div>
+            <div class="flex items-center border rounded-xl p-3 bg-white gap-5">
+              <div
+                class="p-2 rounded-md bg-emerald-50 text-emerald-500 shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
+                  />
+                </svg>
+              </div>
+              <span class="text-sm font-medium">Graphic Design</span>
+            </div>
+            <div class="flex items-center border rounded-xl p-3 bg-white gap-5">
+              <div
+                class="bg-[#EFB263]/10 p-2 rounded-md text-[#EFB263] shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
+                  />
+                </svg>
+              </div>
+              <span class="text-sm font-medium">Photography</span>
+            </div>
+            <div class="flex items-center border rounded-xl p-3 bg-white gap-5">
+              <div
+                class="bg-[#EF4444]/20 p-2 rounded-md text-[#EF4444] shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+                  />
+                </svg>
+              </div>
+              <span class="text-sm font-medium">Video Editing</span>
+            </div>
+          </div>
+
+          <a href="#contact">
+            <button
+              class="flex items-center gap-4 px-4 py-3 bg-[#5D3BF1] rounded-md text-white text-sm font-medium"
+            >
+              <span>Lets Talk</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+        <div class="relative w-full">
+          <!-- Carousel viewport -->
+          <div
+            id="aboutCarousel"
+            class="relative h-[360px] xs:h-[400px] sm:h-[460px] md:h-[500px] lg:h-[540px] w-full overflow-visible"
+          >
+            <!-- SLIDE 1 -->
+            <div
+              class="about-slide cursor-pointer absolute top-1/2 left-1/2 w-[180px] xs:w-[200px] sm:w-[240px] md:w-[270px] lg:w-[300px] h-[300px] xs:h-[340px] sm:h-[400px] md:h-[440px] lg:h-[480px] -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ease-in-out z-30"
+            >
+              <img
+                src="images/vid-editing.jpg"
+                alt="Video Editing"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+              ></div>
+
+              <div
+                class="absolute bottom-4 sm:bottom-7 left-4 sm:left-6 right-4 sm:right-6 text-white"
+              >
+                <span
+                  class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="size-3.5 sm:size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+                    />
+                  </svg>
+                  Film & Motion
+                </span>
+
+                <h3
+                  class="text-lg sm:text-xl md:text-2xl font-bold mt-2 sm:mt-3"
+                >
+                  Video Editing
+                </h3>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div
+              class="about-slide absolute top-1/2 left-1/2 w-[180px] xs:w-[200px] sm:w-[240px] md:w-[270px] lg:w-[300px] h-[300px] xs:h-[340px] sm:h-[400px] md:h-[440px] lg:h-[480px] -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden shadow-xl transition-all duration-700 ease-in-out"
+            >
+              <img
+                src="images/sample.jpg"
+                alt="Photography"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+              ></div>
+
+              <div
+                class="absolute bottom-4 sm:bottom-7 left-4 sm:left-6 right-4 sm:right-6 text-white"
+              >
+                <span
+                  class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="size-3.5 sm:size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
+                    />
+                  </svg>
+                  Visuals
+                </span>
+
+                <h3
+                  class="text-lg sm:text-xl md:text-2xl font-bold mt-2 sm:mt-3"
+                >
+                  Photography
+                </h3>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div
+              class="about-slide absolute top-1/2 left-1/2 w-[180px] xs:w-[200px] sm:w-[240px] md:w-[270px] lg:w-[300px] h-[300px] xs:h-[340px] sm:h-[400px] md:h-[440px] lg:h-[480px] -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden shadow-xl transition-all duration-700 ease-in-out"
+            >
+              <img
+                src="images/graphic-design.jpg"
+                alt="Graphic Design"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+              ></div>
+
+              <div
+                class="absolute bottom-4 sm:bottom-7 left-4 sm:left-6 right-4 sm:right-6 text-white"
+              >
+                <span
+                  class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="size-3.5 sm:size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
+                    />
+                  </svg>
+                  Branding
+                </span>
+
+                <h3
+                  class="text-lg sm:text-xl md:text-2xl font-bold mt-2 sm:mt-3"
+                >
+                  Graphic Design
+                </h3>
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div
+              class="about-slide absolute top-1/2 left-1/2 w-[180px] xs:w-[200px] sm:w-[240px] md:w-[270px] lg:w-[300px] h-[300px] xs:h-[340px] sm:h-[400px] md:h-[440px] lg:h-[480px] -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden shadow-xl transition-all duration-700 ease-in-out"
+            >
+              <img
+                src="images/programming.jpg"
+                alt="Fullstack Development"
+                class="w-full h-full object-cover"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+              ></div>
+
+              <div
+                class="absolute bottom-4 sm:bottom-7 left-4 sm:left-6 right-4 sm:right-6 text-white"
+              >
+                <span
+                  class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="size-3.5 sm:size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                    />
+                  </svg>
+                  Technology
+                </span>
+
+                <h3
+                  class="text-lg sm:text-xl md:text-2xl font-bold mt-2 sm:mt-3"
+                >
+                  Fullstack Development
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAGINATION -->
+          <div
+            id="carouselDots"
+            class="flex justify-center items-center gap-2 mt-3"
+          >
+            <button
+              class="carousel-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"
+            ></button>
+
+            <button
+              class="carousel-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"
+            ></button>
+
+            <button
+              class="carousel-dot w-7 h-2.5 rounded-full bg-[#ef4160] transition-all duration-300"
+            ></button>
+
+            <button
+              class="carousel-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-20 md:py-28 lg:py-32 bg-[#F8F9FB]"
+      id="services"
+    >
+      <span class="text-sm font-bold text-[#5D3BF1]">WHAT I OFFER</span>
+      <div
+        class="flex flex-col md:flex-row items-start md:items-start justify-between gap-4 md:gap-0 mt-10"
+      >
+        <div class="">
+          <p class="text-2xl sm:text-3xl md:text-4xl font-dm-mono font-bold">
+            Services built <span class="text-[#5D3BF1]">with intent.</span>
+          </p>
+        </div>
+        <div class="max-w-full md:max-w-96">
+          <span class="text-base"
+            >A multidisciplinary skill set that lets me take ideas from concept
+            to execution — across development, design, and visual content.</span
+          >
+        </div>
+      </div>
+      <div class="mt-7 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div
+          class="bg-white rounded-xl md:col-span-2 p-6 sm:p-8 md:p-10 flex flex-col justify-between gap-5 border"
+        >
+          <div class="flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <span
+                class="text-4xl sm:text-5xl font-extrabold text-purple-800/20"
+                >01</span
+              >
+              <div class="bg-purple-800/10 p-3 rounded-md text-purple-800">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span class="text-lg font-bold">Fullstack Web Development</span>
+            <span class="text-base text-gray-500"
+              >I build complete, production-ready web apps — responsive
+              frontends with React & TailwindCSS paired with Python/Flask
+              backends and MySQL. From landing pages to full SaaS
+              platforms.</span
+            >
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="text-xs font-medium bg-purple-800/10 text-purple-800 px-2 py-1 rounded-full"
+              >HTML</span
+            >
+            <span
+              class="text-xs font-medium bg-purple-800/10 text-purple-800 px-2 py-1 rounded-full"
+              >TailwindCSS</span
+            >
+            <span
+              class="text-xs font-medium bg-purple-800/10 text-purple-800 px-2 py-1 rounded-full"
+              >JavaScript</span
+            >
+            <span
+              class="text-xs font-medium bg-purple-800/10 text-purple-800 px-2 py-1 rounded-full"
+              >Python</span
+            >
+            <span
+              class="text-xs font-medium bg-purple-800/10 text-purple-800 px-2 py-1 rounded-full"
+              >Flask</span
+            >
+            <span
+              class="text-xs font-medium bg-purple-800/10 text-purple-800 px-2 py-1 rounded-full"
+              >MySQL</span
+            >
+            <span
+              class="text-xs font-medium bg-purple-800/10 text-purple-800 px-2 py-1 rounded-full"
+              >REST APIs</span
+            >
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl md:col-span-1 p-6 sm:p-8 md:p-10 flex flex-col justify-between gap-5 border"
+        >
+          <div class="flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <span
+                class="text-4xl sm:text-5xl font-extrabold text-[#49C55E]/20"
+                >02</span
+              >
+              <div class="p-3 rounded-md bg-emerald-50 text-emerald-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span class="text-lg font-bold">Graphic Design</span>
+            <span class="text-base text-gray-500"
+              >Creating visual identities, marketing assets, and digital designs
+              using Figma, Photoshop, and Illustrator. Every pixel is
+              intentional.</span
+            >
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="text-xs font-medium bg-emerald-50 text-emerald-500 px-2 py-1 rounded-full"
+              >Figma</span
+            >
+            <span
+              class="text-xs font-medium bg-emerald-50 text-emerald-500 px-2 py-1 rounded-full"
+              >Photoshop</span
+            >
+            <span
+              class="text-xs font-medium bg-emerald-50 text-emerald-500 px-2 py-1 rounded-full"
+              >Illustrator</span
+            >
+            <span
+              class="text-xs font-medium bg-emerald-50 text-emerald-500 px-2 py-1 rounded-full"
+              >Branding</span
+            >
+            <span
+              class="text-xs font-medium bg-emerald-50 text-emerald-500 px-2 py-1 rounded-full"
+              >Typography</span
+            >
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl md:col-span-1 p-6 sm:p-8 md:p-10 flex flex-col justify-between gap-5 border"
+        >
+          <div class="flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <span
+                class="text-4xl sm:text-5xl font-extrabold text-[#F97316]/20"
+                >03</span
+              >
+              <div class="bg-[#F97316]/10 p-3 rounded-md text-[#F97316]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span class="text-lg font-bold">Photography</span>
+            <span class="text-base text-gray-500"
+              >Events, portraits, and products shot with a cinematic and
+              story-driven eye.</span
+            >
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="text-xs font-medium bg-[#F97316]/10 text-[#F97316] px-2 py-1 rounded-full"
+              >Events</span
+            >
+            <span
+              class="text-xs font-medium bg-[#F97316]/10 text-[#F97316] px-2 py-1 rounded-full"
+              >Portrait</span
+            >
+            <span
+              class="text-xs font-medium bg-[#F97316]/10 text-[#F97316] px-2 py-1 rounded-full"
+              >Lightroom</span
+            >
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl md:col-span-1 p-6 sm:p-8 md:p-10 flex flex-col justify-between gap-5 border"
+        >
+          <div class="flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <span
+                class="text-4xl sm:text-5xl font-extrabold text-[#EF4444]/20"
+                >04</span
+              >
+              <div class="bg-[#EF4444]/10 p-3 rounded-md text-[#EF4444]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span class="text-lg font-bold">Video Editing</span>
+            <span class="text-base text-gray-500"
+              >Short-form reels, event highlights, and branded content — color
+              graded and paced for impact.</span
+            >
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="text-xs font-medium bg-[#EF4444]/10 text-[#EF4444] px-2 py-1 rounded-full"
+              >Capcut</span
+            >
+            <span
+              class="text-xs font-medium bg-[#EF4444]/10 text-[#EF4444] px-2 py-1 rounded-full"
+              >Color Grade</span
+            >
+            <span
+              class="text-xs font-medium bg-[#EF4444]/10 text-[#EF4444] px-2 py-1 rounded-full"
+              >Reels</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-20 md:py-28 lg:py-32"
+      id="projects"
+    >
+      <span class="font-bold text-sm text-[#5D3BF1]">SELECTED WORK</span>
+      <div
+        class="mt-10 flex flex-col md:flex-row items-start justify-between gap-4 md:gap-10"
+      >
+        <p
+          class="text-2xl sm:text-3xl md:text-4xl font-bold font-dm-mono max-w-2xl"
+        >
+          Projects that
+          <span class="text-[#5D3BF1]">speak for themselves.</span>
+        </p>
+        <div class="max-w-full md:max-w-80">
+          <span class=""
+            >Each project is a different medium, the same standard of
+            craft.</span
+          >
+        </div>
+      </div>
+      <div class="mt-7 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- ============================================ -->
+        <!-- PROJECT 1 - FEATURED -->
+        <!-- ============================================ -->
+
+        <div
+          class="md:col-span-3 bg-white border border-slate-200 rounded-2xl overflow-hidden"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- Image -->
+            <div
+              class="min-h-[220px] sm:min-h-[300px] md:min-h-[360px] bg-cover bg-top bg-no-repeat"
+              style="background-image: url(&quot;/images/bfp-system.png&quot;)"
+            ></div>
+
+            <!-- Content -->
+            <div class="p-6 sm:p-8 flex flex-col justify-center">
+              <div class="flex items-center justify-between mb-6">
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] text-xs font-semibold"
+                >
+                  Fullstack Web Development
+                </span>
+
+                <span class="text-sm text-slate-400 font-semibold"> 2026 </span>
+              </div>
+
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-900">
+                Fire Safety Certificate Monitoring System
+              </h2>
+
+              <p class="mt-1 text-slate-400">
+                Landing Page / Monitoring System
+              </p>
+
+              <p class="mt-5 text-sm leading-6 text-slate-500 max-w-xl">
+                A web-based monitoring system with OCR and geolocation, enabling
+                Fses clerks to track registered businesses and automatically
+                notify owners of certificate expirations via SMS.
+              </p>
+
+              <!-- Technologies -->
+              <div class="flex flex-wrap gap-2 mt-6">
+                <span
+                  class="bg-[#6B48C4]/20 text-xs font-semibold px-2 py-1 rounded-full text-[#6B48C4]"
+                >
+                  HTML
+                </span>
+
+                <span
+                  class="bg-[#6B48C4]/20 text-xs font-semibold px-2 py-1 rounded-full text-[#6B48C4]"
+                >
+                  TailwindCSS
+                </span>
+
+                <span
+                  class="bg-[#6B48C4]/20 text-xs font-semibold px-2 py-1 rounded-full text-[#6B48C4]"
+                >
+                  JavaScript
+                </span>
+
+                <span
+                  class="bg-[#6B48C4]/20 text-xs font-semibold px-2 py-1 rounded-full text-[#6B48C4]"
+                >
+                  Python
+                </span>
+
+                <span
+                  class="bg-[#6B48C4]/20 text-xs font-semibold px-2 py-1 rounded-full text-[#6B48C4]"
+                >
+                  Flask
+                </span>
+
+                <span
+                  class="bg-[#6B48C4]/20 text-xs font-semibold px-2 py-1 rounded-full text-[#6B48C4]"
+                >
+                  MySQL
+                </span>
+
+                <span
+                  class="bg-[#6B48C4]/20 text-xs font-semibold px-2 py-1 rounded-full text-[#6B48C4]"
+                >
+                  REST APIs
+                </span>
+              </div>
+
+              <a
+                href="https://github.com/coliksdottwo/firepin"
+                target="_blank"
+                class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-violet-600 transition"
+              >
+                View Project
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
+                  class="size-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PROJECT 2 - VIZURA -->
+        <!-- ============================================ -->
+
+        <div
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col h-full"
+        >
+          <!-- Preview -->
+          <div
+            class="h-48 sm:h-56 shrink-0 bg-cover bg-center bg-no-repeat overflow-hidden"
+          >
+            <img
+              src="/images/sys-4.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+              >
+                Fullstack Development
+              </span>
+
+              <span class="text-sm text-slate-400 font-semibold"> 2024 </span>
+            </div>
+
+            <h3 class="mt-5 text-xl font-bold text-slate-900">
+              Chiby | e-commerce
+            </h3>
+
+            <p class="mt-1 text-sm text-slate-400">Web and Mobile</p>
+
+            <p class="mt-3 text-sm leading-5 text-slate-500">
+              A web and mobile e-commerce app offering baby and kids’ products
+              like clothes, toys, and essentials, built during my second year in
+              college
+            </p>
+
+            <!-- Bottom content -->
+            <div class="mt-auto pt-8">
+              <!-- Technologies -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  HTML
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  CSS
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  Flask
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  Dart
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  MySQL
+                </span>
+              </div>
+
+              <!-- Link -->
+              <a
+                href="https://github.com/coliksdottwo/chiby"
+                target="_blank"
+                class="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-[#6B48C4] transition"
+              >
+                View Project
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
+                  class="size-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PROJECT 3 - LUMINA -->
+        <!-- ============================================ -->
+
+        <div
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col h-full"
+        >
+          <!-- Preview -->
+          <div
+            class="h-48 sm:h-56 shrink-0 bg-cover bg-center bg-no-repeat overflow-hidden"
+          >
+            <img
+              src="/images/flexlab.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+              >
+                Frontend Development
+              </span>
+
+              <span class="text-sm text-slate-400 font-semibold"> 2026 </span>
+            </div>
+
+            <h3 class="mt-5 text-xl font-bold text-slate-900">
+              Flexlab Printing Services
+            </h3>
+
+            <p class="mt-1 text-sm text-slate-400">Landing Page</p>
+
+            <p class="mt-3 text-sm leading-5 text-slate-500">
+              A modern landing page designed for a printing services business,
+              featuring their services, pricing, and portfolio of previous work
+              in a clean and engaging layout.
+            </p>
+
+            <!-- Bottom content -->
+            <div class="mt-auto pt-8">
+              <!-- Technologies -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  HTML
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full bg-[#6B48C4]/20 text-[#6B48C4] font-semibold text-xs"
+                >
+                  TailwindCSS
+                </span>
+              </div>
+
+              <!-- Link -->
+              <a
+                href="#"
+                class="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-[#6B48C4] transition"
+              >
+                View Project
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
+                  class="size-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PROJECT 4 - KINETIC REELS -->
+        <!-- ============================================ -->
+
+        <div
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col h-full"
+        >
+          <!-- Video Preview -->
+          <div
+            class="h-48 sm:h-56 shrink-0 bg-[url('/images/image.png')] p-6 flex items-center justify-center overflow-hidden bg-top bg-cover"
+          ></div>
+
+          <!-- Content -->
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1 rounded-full bg-[#EF4444]/20 text-[#EF4444] text-xs font-semibold"
+              >
+                UI Design
+              </span>
+
+              <span class="text-sm text-slate-400 font-semibold"> 2025 </span>
+            </div>
+
+            <h3 class="mt-5 text-xl font-bold text-slate-900">Shoe Kicks</h3>
+
+            <p class="mt-1 text-sm text-slate-400">User Interface Design</p>
+
+            <p class="mt-3 text-sm leading-5 text-slate-500">
+              A modern e-commerce UI design for a footwear store, featuring product browsing, category filters, pricing, and a clean, user-friendly shopping experience.
+            </p>
+
+            <!-- Bottom content -->
+            <div class="mt-auto pt-8">
+              <!-- Technologies -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-[#EF4444]/20 text-[#EF4444] text-xs font-semibold"
+                >
+                  Figma
+                </span>
+              </div>
+
+              <!-- Link -->
+              <a
+                href="figma.com/design/QyWDbUZ5WJ9GkcJrsJwE8x/ShoeKicks?node-id=0-1&t=79AHfoklJ1MDBqJO-0"
+                target="_blank"
+                class="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-[#EF4444] transition"
+              >
+                View Project
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
+                  class="size-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-20 md:py-28 lg:py-32 bg-[#F8F9FB] flex items-center justify-center flex-col"
+    >
+      <span class="text-sm font-bold text-[#5D3BF1]">GET IN TOUCH</span>
+      <p
+        class="font-dm-mono text-2xl sm:text-3xl md:text-4xl font-bold mt-5 text-center"
+      >
+        Let's <span class="text-[#5D3BF1]">Work Together</span>
+      </p>
+      <span class="mt-5 text-base text-center max-w-md"
+        >Have a project in mind or just want to say hi? I'd love to hear from
+        you.</span
+      >
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 w-full mt-10 gap-8 lg:gap-10">
+        <div class="flex flex-col gap-5">
+          <div class="flex items-center gap-3 bg-white p-5 rounded-xl border">
+            <div class="bg-[#5D3BF1]/20 p-3 rounded-lg text-[#5D3BF1] shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="text-xs font-semibold text-gray-600">Email</span>
+              <span class="text-sm font-bold text-black truncate"
+                >colicoferdinandj@gmail.com</span
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-3 bg-white p-5 rounded-xl border">
+            <div class="bg-[#5D3BF1]/20 p-3 rounded-lg text-[#5D3BF1] shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-gray-600">Phone</span>
+              <span class="text-sm font-bold text-black">+63 960 833 8441</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 bg-white p-5 rounded-xl border">
+            <div class="bg-[#5D3BF1]/20 p-3 rounded-lg text-[#5D3BF1] shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-semibold text-gray-600">Location</span>
+              <span class="text-sm font-bold text-black"
+                >Laguna, Philippines</span
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <a
+              href="https://github.com/coliks"
+              target="_blank"
+              class="flex items-center justify-center p-3 bg-white rounded-full border text-gray-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/colikss"
+              target="_blank"
+              class="flex items-center justify-center p-3 bg-white rounded-full border text-gray-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ferdinand-colico-795b1a381/"
+              target="_blank"
+              class="flex items-center justify-center p-3 bg-white rounded-full border text-gray-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form
+          method="POST"
+          action="https://formspree.io/f/xoeanenw"
+          class="bg-white p-6 sm:p-8 md:p-10 rounded-2xl border grid grid-cols-1 sm:grid-cols-2 gap-5"
+        >
+          <div class="flex flex-col">
+            <label for="" class="text-sm font-medium mb-1">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="bg-[#F8F9FB] px-4 py-3 rounded-lg border text-sm"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="" class="text-sm font-medium mb-1">Email</label>
+            <input
+              type="email"
+              class="bg-[#F8F9FB] px-4 py-3 rounded-lg border text-sm"
+              placeholder="your@gmail.com"
+              name="email"
+              required
+            />
+          </div>
+          <div class="flex flex-col col-span-1 sm:col-span-2">
+            <label for="" class="text-sm font-medium mb-1">Message</label>
+            <textarea
+              name="message"
+              id=""
+              class="bg-[#F8F9FB] px-4 py-3 rounded-lg border text-sm resize-none h-32 sm:h-40"
+              placeholder="Tell me about your project..."
+            ></textarea>
+          </div>
+          <button
+            class="col-span-1 sm:col-span-2 bg-[#5D3BF1] text-white px-4 py-3 rounded-lg text-sm font-semibold flex items-center justify-center gap-4"
+          >
+            <span>Send Message</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div
+      id="toast"
+      class="fixed top-6 right-6 z-[100] translate-x-[120%] opacity-0 transition-all duration-500 ease-out max-w-sm w-[calc(100%-3rem)] sm:w-auto"
+    >
+      <div
+        id="toastCard"
+        class="flex items-start gap-3 bg-white rounded-xl shadow-2xl border p-4 pr-3"
+      >
+        <div
+          id="toastIconWrap"
+          class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center"
+        >
+          <!-- Success icon -->
+          <svg
+            id="toastIconSuccess"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="size-5 hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 12.75 6 6 9-13.5"
+            />
+          </svg>
+          <!-- Error icon -->
+          <svg
+            id="toastIconError"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="size-5 hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v3.75m0 3.75h.008v.008H12v-.008ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+          <!-- Loading spinner -->
+          <svg
+            id="toastIconLoading"
+            class="size-5 animate-spin hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="flex-1 min-w-0 pt-0.5">
+          <p id="toastTitle" class="text-sm font-bold text-[#0F1221]"></p>
+          <p id="toastMessage" class="text-xs text-gray-500 mt-0.5"></p>
+        </div>
+
+        <button
+          id="toastClose"
+          class="shrink-0 text-gray-400 hover:text-gray-600 transition p-1"
+          aria-label="Close notification"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="size-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="h-1 w-full bg-gray-100 rounded-b-xl overflow-hidden -mt-[1px]"
+      >
+        <div
+          id="toastProgress"
+          class="h-full bg-[#5D3BF1] w-full origin-left"
+        ></div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-[#131313] px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-8 md:py-10 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 text-center sm:text-left"
+    >
+      <span class="text-lg sm:text-xl font-dm-mono font-bold text-white"
+        >Ferdinand.</span
+      >
+      <span class="text-xs sm:text-sm text-gray-400"
+        >© 2026 Ferdinand Colico. All rights reserved.</span
+      >
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+        <span class="text-xs sm:text-sm text-gray-400"
+          >Open to opportunities</span
+        >
+      </div>
+    </footer>
+
+    <script>
+      const slides = document.querySelectorAll(".about-slide");
+      const dots = document.querySelectorAll(".carousel-dot");
+
+      let current = 0;
+      let autoPlay;
+
+      function getSideOffset() {
+        const w = window.innerWidth;
+        if (w < 480) return 90;
+        if (w < 640) return 105;
+        if (w < 768) return 120;
+        if (w < 1024) return 130;
+        return 140;
+      }
+
+      function updateCarousel() {
+        const offset = getSideOffset();
+
+        slides.forEach((slide, index) => {
+          let position = index - current;
+
+          // Make carousel infinite
+          if (position > 2) {
+            position -= slides.length;
+          }
+
+          if (position < -2) {
+            position += slides.length;
+          }
+
+          // CENTER
+          if (position === 0) {
+            slide.style.transform = "translate(-50%, -50%) scale(1)";
+            slide.style.opacity = "1";
+            slide.style.zIndex = "30";
+            slide.style.filter = "none";
+            slide.style.pointerEvents = "auto";
+          }
+
+          // LEFT
+          else if (position === -1) {
+            slide.style.transform = `translate(calc(-50% - ${offset}px), -50%) scale(.88)`;
+            slide.style.opacity = ".85";
+            slide.style.zIndex = "20";
+            slide.style.filter = "brightness(.85)";
+            slide.style.pointerEvents = "auto";
+          }
+
+          // RIGHT
+          else if (position === 1) {
+            slide.style.transform = `translate(calc(-50% + ${offset}px), -50%) scale(.88)`;
+            slide.style.opacity = ".85";
+            slide.style.zIndex = "20";
+            slide.style.filter = "brightness(.85)";
+            slide.style.pointerEvents = "auto";
+          }
+
+          // HIDDEN
+          else {
+            slide.style.transform = "translate(-50%, -50%) scale(.75)";
+            slide.style.opacity = "0";
+            slide.style.zIndex = "10";
+            slide.style.pointerEvents = "none";
+          }
+        });
+
+        // Update dots
+        dots.forEach((dot, index) => {
+          if (index === current) {
+            dot.classList.remove("w-2.5", "bg-gray-300");
+            dot.classList.add("w-7", "bg-[#ef4160]");
+          } else {
+            dot.classList.remove("w-7", "bg-[#ef4160]");
+            dot.classList.add("w-2.5", "bg-gray-300");
+          }
+        });
+      }
+
+      // ==========================================
+      // CLICK ANY VISIBLE IMAGE
+      // ==========================================
+
+      slides.forEach((slide, index) => {
+        slide.addEventListener("click", () => {
+          // Already active
+          if (index === current) {
+            return;
+          }
+
+          // Move clicked image to center
+          current = index;
+
+          updateCarousel();
+
+          // Restart autoplay
+          restartAutoPlay();
+        });
+      });
+
+      // ==========================================
+      // CLICK DOTS
+      // ==========================================
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          current = index;
+
+          updateCarousel();
+
+          restartAutoPlay();
+        });
+      });
+
+      // ==========================================
+      // AUTOPLAY
+      // ==========================================
+
+      function startAutoPlay() {
+        autoPlay = setInterval(() => {
+          current = (current + 1) % slides.length;
+          updateCarousel();
+        }, 4000);
+      }
+
+      function restartAutoPlay() {
+        clearInterval(autoPlay);
+        startAutoPlay();
+      }
+
+      // Recompute slide offsets on resize
+      let resizeTimeout;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(updateCarousel, 150);
+      });
+
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-white", "shadow-sm");
+        } else {
+          navbar.classList.remove("bg-white", "shadow-sm");
+        }
+      });
+
+      // ==========================================
+      // MOBILE MENU
+      // ==========================================
+
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+      });
+
+      document.querySelectorAll(".navlink-mobile").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("flex");
+        });
+      });
+
+      const navLinks = document.querySelectorAll(".navlink");
+      const sections = document.querySelectorAll("section[id]");
+
+      function setActiveLink(id) {
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "active-navlink",
+            link.getAttribute("href") === `#${id}`,
+          );
+        });
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visibleSection = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+          if (visibleSection) {
+            setActiveLink(visibleSection.target.id);
+          }
+        },
+        {
+          rootMargin: "-20% 0px -60% 0px",
+          threshold: [0, 0.25, 0.5, 0.75, 1],
+        },
+      );
+
+      sections.forEach((section) => observer.observe(section));
+
+      // Set Home as active immediately when the page loads
+      if (window.scrollY < 100) {
+        setActiveLink("home");
+      }
+
+      // Keep Home active when at the very top
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < 100) {
+          setActiveLink("home");
+        }
+      });
+
+      // ==========================================
+      // CONTACT FORM (Formspree via fetch)
+      // ==========================================
+
+      const contactForm = document.querySelector("#contact form");
+      const toast = document.getElementById("toast");
+      const toastCard = document.getElementById("toastCard");
+      const toastIconWrap = document.getElementById("toastIconWrap");
+      const toastIconSuccess = document.getElementById("toastIconSuccess");
+      const toastIconError = document.getElementById("toastIconError");
+      const toastIconLoading = document.getElementById("toastIconLoading");
+      const toastTitle = document.getElementById("toastTitle");
+      const toastMessage = document.getElementById("toastMessage");
+      const toastClose = document.getElementById("toastClose");
+      const toastProgress = document.getElementById("toastProgress");
+
+      let toastTimeout;
+      let progressTimeout;
+
+      function showToast(state, title, message) {
+        clearTimeout(toastTimeout);
+        clearTimeout(progressTimeout);
+
+        // Reset icons
+        toastIconSuccess.classList.add("hidden");
+        toastIconError.classList.add("hidden");
+        toastIconLoading.classList.add("hidden");
+
+        // Reset icon wrap color
+        toastIconWrap.className =
+          "shrink-0 w-9 h-9 rounded-full flex items-center justify-center";
+
+        if (state === "loading") {
+          toastIconLoading.classList.remove("hidden");
+          toastIconWrap.classList.add("bg-[#5D3BF1]/10", "text-[#5D3BF1]");
+          toastProgress.classList.add("bg-[#5D3BF1]");
+        } else if (state === "success") {
+          toastIconSuccess.classList.remove("hidden");
+          toastIconWrap.classList.add("bg-emerald-50", "text-emerald-500");
+          toastProgress.classList.remove("bg-[#5D3BF1]", "bg-red-500");
+          toastProgress.classList.add("bg-emerald-500");
+        } else if (state === "error") {
+          toastIconError.classList.remove("hidden");
+          toastIconWrap.classList.add("bg-red-50", "text-red-500");
+          toastProgress.classList.remove("bg-[#5D3BF1]", "bg-emerald-500");
+          toastProgress.classList.add("bg-red-500");
+        }
+
+        toastTitle.textContent = title;
+        toastMessage.textContent = message;
+
+        // Slide in
+        toast.classList.remove("translate-x-[120%]", "opacity-0");
+
+        // Animate progress bar (only for success/error, auto-dismiss states)
+        toastProgress.style.transition = "none";
+        toastProgress.style.transform = "scaleX(1)";
+
+        if (state !== "loading") {
+          progressTimeout = setTimeout(() => {
+            toastProgress.style.transition = "transform 4s linear";
+            toastProgress.style.transform = "scaleX(0)";
+          }, 50);
+
+          toastTimeout = setTimeout(hideToast, 4000);
+        }
+      }
+
+      function hideToast() {
+        toast.classList.add("translate-x-[120%]", "opacity-0");
+        clearTimeout(toastTimeout);
+        clearTimeout(progressTimeout);
+      }
+
+      toastClose.addEventListener("click", hideToast);
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const submitBtn = contactForm.querySelector(
+            'button[type="submit"], button:not([type])',
+          );
+          const originalBtnHTML = submitBtn.innerHTML;
+
+          submitBtn.disabled = true;
+          submitBtn.classList.add("opacity-70", "cursor-not-allowed");
+          submitBtn.innerHTML = "<span>Sending...</span>";
+
+          showToast(
+            "loading",
+            "Sending message…",
+            "Hang tight, this only takes a moment.",
+          );
+
+          try {
+            const formData = new FormData(contactForm);
+            const response = await fetch(contactForm.action, {
+              method: "POST",
+              body: formData,
+              headers: { Accept: "application/json" },
+            });
+
+            if (response.ok) {
+              showToast(
+                "success",
+                "Message sent!",
+                "Thanks for reaching out — I'll get back to you soon.",
+              );
+              contactForm.reset();
+            } else {
+              const data = await response.json().catch(() => null);
+              const errMsg =
+                data && data.errors && data.errors.length
+                  ? data.errors.map((err) => err.message).join(", ")
+                  : "Something went wrong. Please try again.";
+              showToast("error", "Message not sent", errMsg);
+            }
+          } catch (err) {
+            showToast(
+              "error",
+              "Message not sent",
+              "Network error — please check your connection and try again.",
+            );
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
+            submitBtn.innerHTML = originalBtnHTML;
+          }
+        });
+      }
+
+      updateCarousel();
+      startAutoPlay();
+    </script>
+  </body>
+</html>

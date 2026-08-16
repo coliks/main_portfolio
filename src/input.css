@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .navlink {
+    @apply text-sm font-medium;
+  }
+
+  .active-navlink {
+    @apply text-[#5D3BF1] text-sm font-medium;
+  }
+
+}
