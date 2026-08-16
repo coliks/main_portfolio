@@ -173,9 +173,9 @@ function setActiveLink(id) {
 
     if (href === `#${id}`) {
       link.classList.remove("text-gray-500");
-      link.classList.add("text-[#ef4160]", "font-semibold");
+      link.classList.add("text-[#5D3BF1]", "font-semibold");
     } else {
-      link.classList.remove("text-[#ef4160]", "font-semibold");
+      link.classList.remove("text-[#5D3BF1]", "font-semibold");
       link.classList.add("text-gray-500");
     }
   });
